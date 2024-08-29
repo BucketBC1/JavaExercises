@@ -1,6 +1,7 @@
 package linkedList;
 
 import java.util.LinkedList;
+import java.util.ListIterator;
 
 public class EditarLinkedList {
 	public static void main(String[] arrgs) {
@@ -26,6 +27,7 @@ public class EditarLinkedList {
 		listaNombres.add(10, "Andrea");
 		listaNombres.add(11, "Rosa");
 		System.out.println();
+		System.out.println(" --------- / / / --------- ");
 		System.out.println("Add method con indice:");
 		System.out.println("El tamaño de la LinkedList es: " + listaNombres.size());
 		System.out.println(listaNombres);
@@ -39,6 +41,7 @@ public class EditarLinkedList {
 		nombresNuevos.add("Enrique");
 		listaNombres.addAll(nombresNuevos);
 		System.out.println();
+		System.out.println(" --------- / / / --------- ");
 		System.out.println("Agregar nueva lista:");
 		System.out.println("El tamaño de la LinkedList es: " + listaNombres.size());
 		System.out.println(listaNombres);
@@ -56,6 +59,7 @@ public class EditarLinkedList {
 		listaNombres.addAll(0, numerosIniciales);
 		listaNombres.addAll(19, numerosFinales);
 		System.out.println();
+		System.out.println(" --------- / / / --------- ");
 		System.out.println("numeros iniciales y finales");
 		System.out.println("El tamaño de la LinkedList es: " + listaNombres.size());
 		System.out.println(listaNombres);
@@ -63,6 +67,7 @@ public class EditarLinkedList {
 		
 		//addFirts (Agrega al principio)
 		System.out.println();
+		System.out.println(" --------- / / / --------- ");
 		listaNombres.addFirst("primero");
 		System.out.println("AddFirts method:");
 		System.out.println("El tamaño de la LinkedList es: " + listaNombres.size());
@@ -71,6 +76,7 @@ public class EditarLinkedList {
 		
 		//addLast (Agrega al final)
 		System.out.println();
+		System.out.println(" --------- / / / --------- ");
 		listaNombres.addLast("ultimo");
 		System.out.println("addLast method");
 		System.out.println("El tamaño de la LinkedList es: " + listaNombres.size());
@@ -79,6 +85,7 @@ public class EditarLinkedList {
 		
 		//set (atualiza un indice de la lista apartir de su posicion)
 		System.out.println();
+		System.out.println(" --------- / / / --------- ");
 		listaNombres.set(11, "valor cambiado");
 		System.out.println("set method");
 		System.out.println("El tamaño de la LinkedList es: " + listaNombres.size());
@@ -87,24 +94,28 @@ public class EditarLinkedList {
 		
 		//get (llamar indice)
 		System.out.println();
+		System.out.println(" --------- / / / --------- ");
 		System.out.println("get method");
 		System.out.println("Indice 18: " + listaNombres.get(18));
 		
 		
 		//getFirst (llama al primero)
 		System.out.println();
+		System.out.println(" --------- / / / --------- ");
 		System.out.println("getFirst method");
 		System.out.println("El primer valor es: " + listaNombres.getFirst());
 		
 		
 		//getLast (llama el ultimo)
 		System.out.println();
+		System.out.println(" --------- / / / --------- ");
 		System.out.println("getLast method");
 		System.out.println("El ultimo valor es: " + listaNombres.getLast());
 		
 		
 		//contains method (true si contiene un valor otorgado, de lo contrario false)
 		System.out.println();
+		System.out.println(" --------- / / / --------- ");
 		System.out.println("contains method");
 		System.out.println("El valor 'Johnathan' esta dentro de la lista: " + listaNombres.contains("Johnathan"));
 		System.out.println("El valor 'pipas' esta dentro de la lista: " + listaNombres.contains("pipas"));
@@ -112,6 +123,7 @@ public class EditarLinkedList {
 		
 		//contains dentro sentencias
 		System.out.println();
+		System.out.println(" --------- / / / --------- ");
 		System.out.println("contains dentro de una condicional");
 		String valor = "Alejandro";
 		if(listaNombres.contains(valor)) {
@@ -123,6 +135,7 @@ public class EditarLinkedList {
 		
 		//clear method (limpia toda una lista)
 		System.out.println();
+		System.out.println(" --------- / / / --------- ");
 		System.out.println("clear method");
 		System.out.println("'nombresNuevos' antes de clear method: " + nombresNuevos);
 		nombresNuevos.clear();
@@ -132,6 +145,7 @@ public class EditarLinkedList {
 		
 		//isEmpty method (si esta vacia 'true' de lo contrario 'false')
 		System.out.println();
+		System.out.println(" --------- / / / --------- ");
 		System.out.println("isEmpty method");
 		System.out.println("la lista 'nombresNuevos' esta vacia: " + nombresNuevos.isEmpty());
 		System.out.println("la lista 'listaNombres' esta vacia: " + listaNombres.isEmpty());
@@ -139,6 +153,7 @@ public class EditarLinkedList {
 		
 		//remove method
 		System.out.println();
+		System.out.println(" --------- / / / --------- ");
 		System.out.println("remove method sin pasar algún parametro (elimina el primer valor 'primero')");
 		listaNombres.remove();
 		System.out.println(listaNombres + "" + listaNombres.size());
@@ -153,6 +168,7 @@ public class EditarLinkedList {
 		
 		//offer method (agrega el valor otorgado de ultimas en la lista)
 		System.out.println();
+		System.out.println(" --------- / / / --------- ");
 		System.out.println("offer method (agrega el valor otorgado, de ultimas en la lista)");
 		nombresNuevos.offer("offer1");
 		nombresNuevos.offer("offer2");
@@ -162,9 +178,83 @@ public class EditarLinkedList {
 		
 		//offerFirst (agrega de primeras, un valor a la lista)
 		System.out.println();
+		System.out.println(" --------- / / / --------- ");
 		nombresNuevos.offerFirst("offerFirst");
-		System.out.println(nombresNuevos + "" + nombresNuevos.size() );
+		System.out.println(nombresNuevos + "" + nombresNuevos.size());
 		
+		
+		//peek method (recupera pero no elimina el primer elemento de la lista)
+		System.out.println();
+		System.out.println(" --------- / / / --------- ");
+		System.out.println("peek method (recupera pero no elimina el primer elemento de la lista)");
+		System.out.println("listaNombres.peek(): " + listaNombres.peek()); //1
+		
+		
+		//peekFirst method (recupera pero no elimina el primer elemento de la lista)
+		System.out.println();
+		System.out.println(" --------- / / / --------- ");
+		System.out.println("peekFirst (recupera pero no elimina el primer elemento de la lista)");
+		System.out.println("listaNombres.peekFirst(): " + listaNombres.peekFirst());
+		
+		
+		//peekLast method (recupera pero no elimina el primer elemento de la lista)
+		System.out.println();
+		System.out.println(" --------- / / / --------- ");
+		System.out.println("peekLast (recupera pero no elimina el ultimo elemento de la lista)");
+		System.out.println("listaNombres.peekLast(): " + listaNombres.peekLast());
+		
+		
+		//poll method (recupera y elimina el primer elemento de la lista)
+		System.out.println();
+		System.out.println(" --------- / / / --------- ");
+		System.out.println("poll (recupera y elimina el primer elemento de la lista)");
+		System.out.println("listaNombres.poll(): " + listaNombres.poll());
+		System.out.println("listaNombres: " + listaNombres);
+		
+		
+		//pollFirst method (recupera y elimina el primer elemento de la lista)
+		System.out.println();
+		System.out.println(" --------- / / / --------- ");
+		System.out.println("pollFirst (recupera y elimina el primer elemento de la lista)");
+		System.out.println("listaNombres.pollFirst(): " + listaNombres.pollFirst());
+		System.out.println("listaNombres: " + listaNombres);
+		
+		
+		//pollLast method (recupera y elimina el ultimo elemento de la lista)
+		System.out.println();
+		System.out.println(" --------- / / / --------- ");
+		System.out.println("pollLast (recupera y elimina el ultimo elemento de la lista)");
+		System.out.println("listaNombres.pollLast(): " + listaNombres.pollLast());
+		System.out.println("listaNombres: " + listaNombres);
+		
+		
+		//pop method (recupera y no elimina el primer elemento de la lista)
+		System.out.println();
+		System.out.println(" --------- / / / --------- ");
+		System.out.println("pop (recupera y no elimina el primer elemento de la lista)");
+		System.out.println("listaNombres.pop(): " + listaNombres.pop());
+		System.out.println("listaNombres: " + listaNombres);
+		
+		
+		//push method (recibe únicamente el dato que se desea guardar, el índice asignado es el 0, así que queda en la primera posición, por ende, las demás posiciones aumentan en 1, en caso de que existan.)
+		System.out.println();
+		System.out.println(" --------- / / / --------- ");
+		System.out.println("push (recibe únicamente el dato que se desea guardar, el índice asignado es el 0, así que queda en la primera posición, por ende, las demás posiciones aumentan en 1, en caso de que existan.)");
+		listaNombres.push("UnoUsandoPush");
+		System.out.println("listaNombres: " + listaNombres);
+		
+		
+		//listIterator method (crea una variable de iteracion de listas para recorrerlas en el orden en el que se encuentran almacenadas)
+		System.out.println();
+		System.out.println(" --------- / / / --------- ");
+		System.out.println("listIterator method (crea una variable de iteracion de listas para recorrerlas en el orden en el que se encuentran almacenadas)");
+		ListIterator<String> listaIterable = listaNombres.listIterator();
+		
+		int valorIterable = 0;
+		while(listaIterable.hasNext()) {
+			System.out.println("- Valor " + valorIterable + ": " +listaIterable.next());
+			valorIterable++;
+		}
 		
 	}
 
